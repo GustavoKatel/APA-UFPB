@@ -50,10 +50,10 @@ int main(int argc, const char *argv[]) {
       break;
   }
 
-  for(aux: vec) {
-    std::cout << aux << ' ';
+  for(auto aux: vec) {
+    std::cout << aux << '\n';
   }
-  std::cout << std::endl;
+  // std::cout << std::endl;
 
   return 0;
 }
