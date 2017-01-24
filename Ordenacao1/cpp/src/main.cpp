@@ -5,6 +5,7 @@
 #include "insertion_sort.h"
 #include "merge_sort.h"
 #include "quick_sort.h"
+#include "heap_sort.h"
 
 #define READ_ALL while( std::cin >> aux ) { vec.push_back(aux); }
 
@@ -15,8 +16,8 @@ int main(int argc, const char *argv[]) {
     return 1;
   }
 
-  std::vector<double> vec;
-  double aux;
+  std::vector<int> vec;
+  int aux;
 
   switch(argv[1][0]) {
     case '1':
@@ -37,6 +38,11 @@ int main(int argc, const char *argv[]) {
     case '4':
       READ_ALL;
       quick_sort(vec, 0, vec.size()-1);
+      break;
+
+    case '5':
+      READ_ALL;
+      heap::heap_sort(vec);
       break;
 
     default:

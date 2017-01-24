@@ -7,7 +7,7 @@
 * Quick-sort using Hoare partition scheme (https://en.wikipedia.org/wiki/Quicksort#Hoare_partition_scheme)
 */
 
-bool quick_sort(std::vector<double> &vec, int lo, int hi);
-int quick_sort_partition(std::vector<double> &vec, int lo, int hi);
+bool quick_sort(std::vector<int> &vec, int lo, int hi);
+int quick_sort_partition(std::vector<int> &vec, int lo, int hi);
 
 #endif

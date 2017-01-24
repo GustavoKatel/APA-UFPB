@@ -3,6 +3,6 @@
 
 #include <vector>
 
-bool insertion_sort(std::vector<double> &vec);
+bool insertion_sort(std::vector<int> &vec);
 
 #endif

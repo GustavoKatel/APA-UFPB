@@ -1,9 +1,9 @@
 #include "utils.h"
 
-int swap(std::vector<double> &vec, int i, int j)
+int swap(std::vector<int> &vec, int i, int j)
 {
 
-  double aux = vec[i];
+  int aux = vec[i];
   vec[i] = vec[j];
   vec[j] = aux;
 

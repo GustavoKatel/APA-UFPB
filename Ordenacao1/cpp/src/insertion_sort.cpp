@@ -2,11 +2,11 @@
 
 #include "utils.h"
 
-bool insertion_sort(std::vector<double> &vec)
+bool insertion_sort(std::vector<int> &vec)
 {
 
   int i, j;
-  double x;
+  int x;
 
   for(i=0; i < vec.size(); i++) {
 

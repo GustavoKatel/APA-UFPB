@@ -2,7 +2,7 @@
 
 #include "utils.h"
 
-bool selection_sort(std::vector<double> &vec)
+bool selection_sort(std::vector<int> &vec)
 {
 
   int i, j, imin;

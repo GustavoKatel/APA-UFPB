@@ -7,7 +7,7 @@
 * Merge-sort using lists top-down
 */
 
-std::vector<double>  merge_sort(std::vector<double> &vec);
-std::vector<double>  merge(std::vector<double> &left, std::vector<double> &right);
+std::vector<int>  merge_sort(std::vector<int> &vec);
+std::vector<int>  merge(std::vector<int> &left, std::vector<int> &right);
 
 #endif

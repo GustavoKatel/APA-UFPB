@@ -3,6 +3,6 @@
 
 #include <vector>
 
-bool selection_sort(std::vector<double> &vec);
+bool selection_sort(std::vector<int> &vec);
 
 #endif
