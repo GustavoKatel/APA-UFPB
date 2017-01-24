@@ -22,27 +22,27 @@ int main(int argc, const char *argv[]) {
   switch(argv[1][0]) {
     case '1':
       READ_ALL;
-      selection_sort(vec);
+      selection_sort::selection_sort(vec);
       break;
 
     case '2':
       READ_ALL;
-      insertion_sort(vec);
+      insertion_sort::insertion_sort(vec);
       break;
 
     case '3':
       READ_ALL;
-      vec = merge_sort(vec);
+      vec = merge_sort::merge_sort(vec);
       break;
 
     case '4':
       READ_ALL;
-      quick_sort(vec, 0, vec.size()-1);
+      quick_sort::quick_sort(vec, 0, vec.size()-1);
       break;
 
     case '5':
       READ_ALL;
-      heap::heap_sort(vec);
+      heap_sort::heap_sort(vec);
       break;
 
     default:

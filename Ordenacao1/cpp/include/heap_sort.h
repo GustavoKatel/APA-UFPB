@@ -6,7 +6,7 @@
 /*
 * Quick-sort using Hoare partition scheme (https://en.wikipedia.org/wiki/Quicksort#Hoare_partition_scheme)
 */
-namespace heap {
+namespace heap_sort {
 
   bool heap_sort(std::vector<int> &vec);
   void heapify(std::vector<int> &vec);

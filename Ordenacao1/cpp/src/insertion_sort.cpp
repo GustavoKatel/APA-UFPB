@@ -2,7 +2,7 @@
 
 #include "utils.h"
 
-bool insertion_sort(std::vector<int> &vec)
+bool insertion_sort::insertion_sort(std::vector<int> &vec)
 {
 
   int i, j;

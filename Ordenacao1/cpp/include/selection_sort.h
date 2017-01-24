@@ -3,6 +3,8 @@
 
 #include <vector>
 
-bool selection_sort(std::vector<int> &vec);
+namespace selection_sort {
+  bool selection_sort(std::vector<int> &vec);
+};
 
 #endif

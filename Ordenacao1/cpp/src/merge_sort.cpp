@@ -4,7 +4,7 @@
 
 #include "utils.h"
 
-std::vector<int> merge_sort(std::vector<int> &vec)
+std::vector<int> merge_sort::merge_sort(std::vector<int> &vec)
 {
 
   if(vec.size() <= 1){
@@ -23,7 +23,7 @@ std::vector<int> merge_sort(std::vector<int> &vec)
 
 }
 
-std::vector<int> merge(std::vector<int> &left, std::vector<int> &right)
+std::vector<int> merge_sort::merge(std::vector<int> &left, std::vector<int> &right)
 {
   std::vector<int> vecres;
 

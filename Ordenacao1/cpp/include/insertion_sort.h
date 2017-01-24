@@ -3,6 +3,10 @@
 
 #include <vector>
 
-bool insertion_sort(std::vector<int> &vec);
+namespace insertion_sort {
+
+  bool insertion_sort(std::vector<int> &vec);
+
+};
 
 #endif

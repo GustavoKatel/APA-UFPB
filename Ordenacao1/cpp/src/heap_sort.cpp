@@ -5,7 +5,7 @@
 
 #include "utils.h"
 
-bool heap::heap_sort(std::vector<int> &vec)
+bool heap_sort::heap_sort(std::vector<int> &vec)
 {
   heapify(vec);
 
@@ -21,7 +21,7 @@ bool heap::heap_sort(std::vector<int> &vec)
 
 }
 
-void heap::heapify(std::vector<int> &vec)
+void heap_sort::heapify(std::vector<int> &vec)
 {
  int start = iparent(vec.size()-1);
 
@@ -34,7 +34,7 @@ void heap::heapify(std::vector<int> &vec)
 
 }
 
-void heap::sift_down(std::vector<int> &vec, int start, int end)
+void heap_sort::sift_down(std::vector<int> &vec, int start, int end)
 {
   int root = start;
   int child, iswap;
@@ -63,17 +63,17 @@ void heap::sift_down(std::vector<int> &vec, int start, int end)
 
 }
 
-inline int heap::iparent(int i)
+inline int heap_sort::iparent(int i)
 {
     return std::floor( (i-1) / 2 );
 }
 
-inline int heap::ileft_child(int i)
+inline int heap_sort::ileft_child(int i)
 {
   return 2*i + 1;
 }
 
-inline int heap::iright_child(int i)
+inline int heap_sort::iright_child(int i)
 {
   return 2*i + 2;
 }
