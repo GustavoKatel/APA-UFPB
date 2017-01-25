@@ -2,10 +2,8 @@ use std::{io, env};
 
 mod selection_sort;
 
-fn main() {
-    if let Some(arg1) = env::args().nth(1) {
-
-        let mut vec : Vec<usize> = Vec::new();
+macro_rules! read_to_vec {
+    ($vec:ident) => (
 
         let mut input_text = String::new();
         'read_loop: loop {
@@ -23,23 +21,35 @@ fn main() {
                 .split_whitespace()
                 .map(|s| s.parse().unwrap())
                 .collect();
-            vec.append(&mut numbers);
+            $vec.append(&mut numbers);
         }
 
-        match arg1.as_ref() {
+    )
+}
+
+fn main() {
+    if let Some(arg1) = env::args().nth(1) {
+
+        let mut vec : Vec<usize> = Vec::new();
+
+        let result = match arg1.as_ref() {
             "1" => {
+                read_to_vec!(vec);
                 selection_sort::sort(&mut vec);
-            },
-            "2" => {
-                selection_sort::sort(&mut vec);
+                true
             },
             _ => {
                 println!("Invalid algorithm", );
+                false
             }
-        }
+        };
 
-        for num in vec {
-            println!("{:?}", num);
+        if result {
+
+            for num in vec {
+                println!("{:?}", num);
+            }
+
         }
 
     } else {
