@@ -7,7 +7,7 @@
 #include "quick_sort.h"
 #include "heap_sort.h"
 
-#define READ_ALL std::cin >> aux; while( std::cin >> aux ) { vec.push_back(aux); }
+#define READ_ALL while( std::cin >> aux ) { vec.push_back(aux); }
 
 int main(int argc, const char *argv[]) {
 
@@ -18,6 +18,7 @@ int main(int argc, const char *argv[]) {
 
   std::vector<int> vec;
   int aux;
+  std::cin >> aux;
 
   switch(argv[1][0]) {
     case '1':
