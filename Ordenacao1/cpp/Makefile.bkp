@@ -12,14 +12,7 @@ DIST_DIR = bin
 
 EXEC = ord1
 
-SOURCES = heap_sort.cpp \
-insertion_sort.cpp \
-main.cpp \
-merge_sort.cpp \
-quick_sort.cpp \
-selection_sort.cpp \
-utils.cpp
-
+SOURCES = $(shell find $(SRC_DIR) -name "*.cpp" -printf "%f\n")
 OBJS = $(SOURCES:%.cpp=$(BUILD_DIR)/%.o)
 
 all: directories $(OBJS)
