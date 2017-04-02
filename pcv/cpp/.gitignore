@@ -1,0 +1,7 @@
+obj/
+GPATH
+GRTAGS
+GSYMS
+GTAGS
+.vscode/
+bin/
